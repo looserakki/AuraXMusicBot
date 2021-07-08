@@ -219,7 +219,7 @@ async def ytp(client: Client, message_: Message):
         position = sira.add(message_.chat.id, file_path)
         await res.edit_text(f"✯𝗩𝗖𝗣𝗹𝗮𝘆✯=#️⃣ Queued at position {position}.")
     else:
-        await res.edit_text("✯𝗩𝗖𝗣𝗹𝗮𝘆✯=▶️ Playing....")
+        await res.edit_text("✯𝗩𝗖𝗣𝗹𝗮𝘆✯=▶️ Playing.....")
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
     await res.edit("Generating Thumbnail.")
     await generate_cover(requested_by, title, views, duration, thumbnail)
